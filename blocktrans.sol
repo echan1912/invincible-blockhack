@@ -1,15 +1,15 @@
 //specify solidity version
-pragma solidity ^0.4.24;
+ pragma solidity ^0.4.24;
  
- contract TransEntry{
-     string blocktrans;
-     //create a function that writes a mood to the smart contract
-    function setMood(string _blocktrans) public{
-     tran = _tran;
- }
- 
- //create a function the reads the mood from the smart contract
-     function gettran() public view returns(string){
-     return mood;
- }
+ //define the contract
+ contract BlockTrans{
+     string trans;
+     //create function writing a translation entry to a smart contract
+     function setTrans(string _trans) public{
+         trans = _trans;
+     }
+     //create a function that reads the translation from the smart contract
+     function getTrans() public view returns(string){
+         return trans;
+     }
  }
