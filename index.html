@@ -13,7 +13,7 @@ var BlockTransContractABI = "<0x1CB740ff7719c792CD4B3F34A4B95632BbcEB4F2>"
 var BlockTransContract
 var signer
 provider.listAccounts().then(function(accounts) {
-      signer = provider.getSigner(accounts[0x9aA43cE2B63e96B41DEECB6Dd8C1db34c4d495Ac]);
+      signer = provider.getSigner(accounts[0]);
       BlockTransContract = new ethers.Contract(BlockTransContractAddress, BlockTransContractABI, signer);
     })
     async function getSubmit(){
