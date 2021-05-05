@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<header>
+<script charset="utf-8"
+    src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
+    type="text/javascript">
+</script> 
+<script>
+window.ethereum.enable();
+var provider = new ethers.providers.Web3Provider(web3.currentProvider,'ropsten');
+var BlockTransContractAddress = "<https://ropsten.etherscan.io/tx/0x0e7b23b66f722b9b4f6e41710eaf5792db8f8b535f1b25d420f59fab5a553c48>";
+var BlockTransContractABI = "<0x1CB740ff7719c792CD4B3F34A4B95632BbcEB4F2>"
+var BlockTransContract
+var signer
+provider.listAccounts().then(function(accounts) {
+      signer = provider.getSigner(accounts[0x9aA43cE2B63e96B41DEECB6Dd8C1db34c4d495Ac]);
+      BlockTransContract = new ethers.Contract(BlockTransContractAddress, BlockTransContractABI, signer);
+    })
+    async function getSubmit(){
+    getBlockTransPromise = BlockTransContract.getMood();
+    var BlockTrans = await getBlockTransPromise;
+    console.log(BlockTrans);
+  }
+
+  async function setManager(){
+    let mood = document.getElementById("tran").value
+    setBlockTransPromise = BlockTransContract.setManager("transactions");
+    await setBlockTransPromise;
+  }
+</script>
+</header>
+<body>
+    <title>Blocktrans</title>
+    <h1>A freemium, accurate and secure translation app</h1>
+    <p> Here you can set the source document: </p>
+    <label for="tran">Input text:</label> <br>
+    <input type="text" id="tran">
+      <div>
+        <button onclick="getSubmit()"> submit translation</button>
+      </div>
+      <div>
+        <button onclick="setManager()"> I'm a Manager </button>
+      </div>
+  </body>
+</html>
