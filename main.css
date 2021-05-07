@@ -1,4 +1,13 @@
-*{
+body{
+    background-color: lightcyan;
+}
+
+h1{
     text-align: center;
-    color: blue;
+    color: red;
+}
+
+*{
+    text-align: left;
+    color: red;
 }
