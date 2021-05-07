@@ -1,6 +1,15 @@
 # invincible-blockhack
 BlockHack 2021 submission by @echan1912, @femto45 and @Inevitable-debug
 
+@echan1912
+* HTML/CSS
+
+@Inevitable-debug
+* Smart contracts
+
+@femto45
+* Homepage HTML/CSS
+
 There may be replicates of content, that is because we preferred working locally rather than cloning a local repo from Github
 
 --
