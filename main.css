@@ -2,9 +2,16 @@ body{
     background-color: lightcyan;
 }
 
-h1{
+h1, h2{
     text-align: center;
     color: red;
+}
+
+button{
+    text-align: center;
+    background-color: green;
+    color: yellow;
+    display: inline-block;
 }
 
 *{
