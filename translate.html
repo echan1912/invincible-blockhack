@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,10 +6,28 @@
         <title>Translators</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     </head>
+    <div class="w3-top">
+      <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="http://127.0.0.1:5500/blocktrans/home.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+        <a href="http://127.0.0.1:5500/blocktrans/translate.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Translators</a>
+        <a href="http://127.0.0.1:5500/blocktrans/manager.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Managers</a>
+        </div>
     <body>
-        <h1>Compare with Google Translate</h1>
+      <div class="w3-main" style="margin-left:250px">
+        <div class="w3-row w3-padding-64">
+          <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Compare with Google Translate</h1>
+        <h1><a href="http://etherscan.io">Your  transactions</a></h1>
         <p>Translate this form:</p>
         <div id="google_translate_element"></div>
         <script type="text/javascript">
@@ -28,7 +40,7 @@
         <p>Upload your translated document here:</p>
         <form action="/action_page.php">
             <input type="file" id="myFile" name="filename">
-            <input type="submit">
+            <input type="submit" value="Submit">
         </form>
         <p>Alternatively, paste your translated text here:</p>
         <div class="container">
@@ -57,14 +69,8 @@
                 <div class="col-75">
                   <textarea id="translate" name="translate" placeholder="What did you translate?" style="height:200px"></textarea>
                 </div>
-              </div>
-              <div class="row">
-                <input type="submit" value="Submit">
-              </div>
             </form>
           </div>
-    
-        <h1>Submit proof of translation</h1>
     </body>
 </html>
 
