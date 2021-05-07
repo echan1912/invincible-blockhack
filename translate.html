@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Translators</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Compare with Google Translate</h1>
+        <p>Translate this form:</p>
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>You can translate the content of this form by selecting the language in the select box.</p>
+        <p>Upload your translated document here:</p>
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            <input type="submit">
+        </form>
+        <p>Alternatively, paste your translated text here:</p>
+        <div class="container">
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="subject" name="sub" placeholder="Subject of your doc..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="contact">Contact</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="contact" name="con" placeholder="Contact details..">
+                </div>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="translate">Translation text</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="translate" name="translate" placeholder="What did you translate?" style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+    
+        <h1>Submit proof of translation</h1>
+    </body>
+</html>
+
+
+
+
+
